@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+sudo apt update -y
+sudo DEBIAN_FRONTEND=noninteractive apt full-upgrade -yq
+sudo DEBIAN_FRONTEND=noninteractive apt install -y git docker.io docker-compose-v2 build-essential tmux cron iputils-ping net-tools unzip btop
+sudo usermod -aG docker $USER
+
 cd $(dirname "$0")
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
