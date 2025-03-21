@@ -4,7 +4,7 @@ Tryam - simple pet project / Трям простой любительский п
 
 ### Requirements
 
-x86_64; Ubuntu 24.04; 1 core; 2GB RAM; 20GB SSD; 10mbps WAN; Open Ports TCP+UDP:
+x86_64; Ubuntu 24.04; 1 core; 2GB RAM; 20GB SSD; 10mbps WAN; Open Ports TCP+UDP: 31337
 
 ### Installation
 
