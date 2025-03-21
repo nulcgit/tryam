@@ -6,7 +6,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y git docker.io docker-compose-
 sudo usermod -aG docker $USER
 
 cd $(dirname "$0")
-sudo DEBIAN_FRONTEND=noninteractive apt install -y libssl-dev
+sudo DEBIAN_FRONTEND=noninteractive apt install -y libssl-dev pkg-config
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 git clone --recurse-submodules https://github.com/freenet/freenet-core
